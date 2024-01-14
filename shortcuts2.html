@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>shortcut2</title>
+</head>
+<body>
+
+    <script>
+
+        function add(x, y) {
+            return x + y
+        }
+
+        const num =   [ 1, 2, 3, 4,   5]
+        //const res = [ 1, 4, 9, 16, 25]
+        const res = [ ]
+        
+        num.forEach(function (n) { res.push(n**2) })
+
+        const map_result = num.map(n => n**2)
+
+        // 1.
+        // use map to create an array of the string length:
+        // result =   [   2,      4,        7,      4]
+        const words = ["hi", "java", "program", "cool"]
+        
+        // 2.
+        // use map to get the boolean of is positive?
+        // result = [ true, true, false, true, false, false]
+        const nums1 = [8, 9, -1, 2, 0, -3000]
+
+        // 3. 
+        // use map to get each item + 1
+        // result = [ 7, 8, 10, -12]
+        const num2 = [6, 7,  9,  -13]
+  
+        // 3. 
+        // use map to get each item sqaure root
+        // result = [ 25, 36, 100, 4]
+        const num3 = [5, 6, 10, 2]
+
+
+    </script>
+
+</body>
+</html>

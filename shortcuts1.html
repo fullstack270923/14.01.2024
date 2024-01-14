@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>shortcut1</title>
 </head>
 <body>
     <script>
@@ -43,7 +43,18 @@
         // **my**
         // ***javascript***
         // ****program****
+        arr2.forEach(word => console.log(`*${word}*`))
 
+        let stars = ""
+        arr2.forEach(word => {
+                stars += "*"
+                console.log(`${stars}${word}${stars}`)
+        })
+
+        //               0        1     2             3
+        //const arr2 = ["hello", "my", "javascript", "program"]
+        arr2.forEach((word, index) => 
+            console.log(`${"*".repeat(index + 1)} ${word} ${"*".repeat(index + 1)}!`))
     </script>
 </body>
 </html>
