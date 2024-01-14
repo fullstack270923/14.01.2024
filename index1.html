@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>html1</title>
+</head>
+<body>
+    
+    <script>
+
+        let y = 1;
+
+        function foo() {
+            let x = 1;
+            x++;
+            y++; 
+            return x
+        }
+
+        function sum(a, b) {
+            const res1 = a + b;
+            y = a + b
+            console.log(res1);
+        }
+        const sum1 = sum(3, 4) // 7
+        const sum2 = sum(4, 5) // 9
+
+        let grade = parseInt(prompt('Enter grade:'))
+
+        switch (grade) {
+                case 100: // grade == 100 ?
+        }
+
+        switch (true) {
+            case grade < 0: // grade < 0 == true
+                console.log('error');
+                break;
+            case grade <= 20:
+                console.log('very bad');    
+                break;
+        }
+
+        if (grade < 0) {
+            console.log('error');
+        }
+        else if (grade <= 20) {
+            console.log('very bad');
+        }
+        else if (grade <= 40) {
+            console.log('bad');
+        }        
+        else if (grade <= 60) {
+            console.log('try to improve');
+        }        
+        else if (grade <= 80) {
+            console.log('Good!');
+        }        
+        else if (grade <= 100) {
+            console.log('very Excellent');
+        }                
+        else if (grade == 100) {
+            console.log('WOW');
+        }        
+        else {
+            console.log('not in range');
+        }
+
+    </script>
+
+</body>
+</html>

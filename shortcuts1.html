@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const arr1 = [1, 5, 8, -2, 22]
+
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[ i ]);            
+        }
+        for (let n of arr1) {
+            console.log(n);
+        }
+
+        function do_each(n) {
+            console.log(n);
+        }
+        for (let n of arr1) {
+            do_each(n)
+        }
+
+        arr1.forEach(do_each) // returns undefined
+
+        arr1.forEach(n => console.log(n))
+
+        arr1.forEach(n => {
+            document.write(`${n} <br/>`)
+            console.log(n)
+        })
+
+        const arr2 = ["hello", "my", "javascript", "program"]
+        // use arr2.foreach loop to print every word with *word*
+        // *hello*
+        // *my*
+        // *javascript*
+        // *program*
+        //
+        // **Bonus:
+        // *hello*
+        // **my**
+        // ***javascript***
+        // ****program****
+
+    </script>
+</body>
+</html>

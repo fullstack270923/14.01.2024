@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <script>
+
+        const arr2 = [7, 200, 300, 800, 1, 99]
+
+        function check_if_zugi(num) {
+            if (num % 2 == 0)
+                return true
+            else
+                return false;
+
+            return num % 2 == 0 ? true : false
+            return num % 2 == 0 
+        }
+
+        const arr2_demo = [7, 200, 300, 800, 1, 99]
+        const result2 = [ ]
+        for (let number of arr2_demo) {
+            if (check_if_zugi(number)) {
+                result2.push(number)
+            }
+        }
+        const result3 = arr2.filter(check_if_zugi)
+
+        const result4 = arr2.filter(num => num % 2 == 0)
+
+    </script>
+
+</body>
+
+</html>
